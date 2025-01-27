@@ -1,0 +1,21 @@
+# version: '3.9'
+services:
+  student-app:
+    image: student-image
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    networks:
+      - stunet
+  db:
+    image: postgres
+    ports:
+      - 5432
+    environment:
+      - POSTGRES_PASSWORD=password
+    networks:
+      - stunet
+networks:
+  stunet:
+    driver: bridge
