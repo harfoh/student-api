@@ -1,27 +1,8 @@
 # Node modules
 node_modules
 package-lock.json
-
+seeders
 # Environment files
 .env
-.env.local
-.env.*.local
-config/database.js
-
-# Sequelize
-src/migrations/
-src/seeders/
-
-# Logs
-logs/
-*.log
-
-# Build files
-dist/
-build/
-.cache/
-coverage/
-
-# OS and Editor-specific files
-.DS_Store
+minikube-darwin-arm64
 .vscode/
